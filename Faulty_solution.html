@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- meta viewport and device width is missing--> 
+    <title>Faulty Webpage</title>
+    <!-- CSS with errors -->
+    <style>
+        body {
+            background: #ffffff;
+            font-family; Arial, sans-serif; 
+            color: blue red; 
+            margin: 20px 10; 
+        }
+        
+        #header {
+            font-weight: 700; 
+            background-color:black ; /* background color is missing*/
+        }
+
+        .container {
+            width: 100; 
+            padding: 10px 15; 
+            border: solid; 
+            display; flex; 
+        }
+
+        .menu-item {
+            text-decoration none;
+            font-size: 16pt;
+            display: inline block; 
+        }
+
+        p::after {
+            content: ""  /*content is miising */
+            font-size: 10px;
+        }
+
+        a {
+            text-decoration: undeline; 
+            cursor; pointer; 
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML with errors -->
+    <div id="header">
+        <h1>Welcome to Faulty Webpage<h1> 
+        <p>Here you will learn about different issues in web development</p>
+    </div>
+
+    <div class="container">
+        <ul>
+            <li class="menu-item">Home<li> 
+            <li class="menu-item">About Us</li>
+            <li class="menu-item">Contact<li> 
+        </ul>
+
+        <img src="image.jpg" width="300" height="200"> <!-- image source is not available so it will 
+        not dispaly the images -->
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <!-- closing tag is missing-->
+
+        <button onclick="showAlert()">Click Me!</button>
+        <input type="text" name="username" placeholder="Enter your name"> 
+        <input type="button" value="Submit" onclick="validateForm()"> 
+        <br>
+        <a href="https://www.example.com">Visit Example.com</a> 
+        <hr> 
+    </div>
+
+    <!-- JavaScript with errors -->
+    <script>
+        function showAlert() {
+            alert("Hello World!");//Bracket is missing & semicolon missing; 
+        }
+
+        function validateForm() {
+            var username = document.getElementbyId("username").value; 
+            if (username = "") { 
+                alert("Username cannot be empty");
+            }
+            else if (username.length < 3) { 
+                alert("Username must be at least 3 characters long");
+            } else {
+                document.form.submit(); 
+            }
+        }
+
+        document.getElementByClassName("menu-item").style.color = "green"; 
+        
+        const myArray = [1, 2, 3, 4, 5;
+        myArray.foreach(function(item) { 
+            console.log(item);
+        });
+
+        var number = 10
+        if (number ==10) { //condition should use relational operator not assigning one
+            console.log("Number is ten") 
+        }
+
+        for (var i = 0; i < 10; i++ { 
+            console.log(i);
+        }
+
+        let object = { key: "value", }; 
+        alert("The object key is " + object.key);
+        
+        const undefinedVariable;
+        console.log(undefinedVariable); 
+
+        document.addEventListener("click", function(){
+            console.log("Document clicked!") 
+        })//its a funtion call error
+
+        var missingSemicolon = 'This string is missing a semicolon' ;
+
+        let sum = 10 + ; 
+
+        var myFunc = function() {
+            console.log("Faulty function!");//strings should be close inverted commas missing
+        } 
+
+        let counter = 0;
+        while (counter < 5) {  //round bracket is missing
+            console.log(counter);
+            counter++;
+        }
+    </script>
+</body>
+</html>
