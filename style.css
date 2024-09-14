@@ -11,17 +11,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #18a074; /* Upwork-like green */
+    background-color: #18a074;
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease-in-out;
-}
-
-.navbar:hover {
-    background-color: #148860; /* Slightly darker green on hover */
 }
 
 .navbar-brand {
@@ -46,50 +41,67 @@ body {
     text-decoration: none;
     font-size: 1rem;
     padding: 0.5rem 1rem;
-    transition: color 0.3s ease, transform 0.2s ease;
     border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Hover effect for navbar links */
-.navbar-links a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Add background on hover */
-    color: #f4f4f4;
-    transform: translateY(-2px); /* Small upward movement */
-}
-
-/* Button Styling for 'Hire Me' */
 .hire-me-btn {
-    background-color: #f39c12; /* Bright orange for contrast */
+    background-color: #f39c12;
     border: none;
-    border-radius: 5px;
     padding: 0.5rem 1.5rem;
     color: white;
     font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
 }
 
-.hire-me-btn:hover {
-    background-color: #e67e22; /* Slightly darker orange */
-    transform: scale(1.05); /* Grow on hover */
+/* Main Section Styling */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background-color: #f4f4f4;
+    height: calc(100vh - 80px); /* Adjust to take full height minus navbar */
 }
 
-/* Navbar links on smaller screens */
-@media (max-width: 768px) {
-    .navbar-links {
-        flex-direction: column;
-        display: none;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
+.intro-text {
+    flex: 1;
 }
 
-/* Styling for sections */
-section {
-    padding: 2rem;
-    text-align: center;
+.intro-text h1 {
+    font-size: 4.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.sher {
+    font-size: 1.5rem;
+    color: #333;
+    font-style: italic;
+    border-left: 3px solid #18a074;
+    padding-left: 10px;
+}
+
+/* Profile Picture */
+.profile-picture {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid #18a074;
+    object-fit: cover;
 }
 
 /* Footer */
@@ -98,4 +110,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
