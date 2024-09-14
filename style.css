@@ -502,3 +502,31 @@ footer {
     font-size: 1em;
     color: #666;
 }
+footer {
+    background-color: #18a074;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-social-links {
+    margin-top: 10px;
+}
+
+.social-link {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.social-link img:hover {
+    transform: scale(1.1);
+}
