@@ -372,3 +372,44 @@ footer {
     font-size: 0.9em;
     color: #666;
 }
+
+.certifications-section {
+    padding: 100px 100px;
+    background-color: #f9f9f9;
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.certification-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: calc(23.33% - 20px); /* Ensures 3 boxes in a row with gaps */
+}
+
+.certification-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.certification-box h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.certification-box p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
