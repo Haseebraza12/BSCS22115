@@ -451,3 +451,54 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+.social-media-feed-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-media-box {
+    flex: 1;
+    max-width: 560px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.social-media-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.social-media-content {
+    padding: 15px;
+}
+
+.social-media-content h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.social-media-content p {
+    font-size: 1em;
+    color: #666;
+}
