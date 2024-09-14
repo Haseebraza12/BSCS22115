@@ -175,3 +175,92 @@ footer {
         height: 200px;
     }
 }
+/* Education Section Styling */
+.education-section {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+/* Education Container */
+.education-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Education Box */
+.education-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 250px;
+    margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+    border: 2px solid #18a074;
+}
+
+/* Logo Circle */
+.logo-circle {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #18a074;
+    overflow: hidden;
+}
+
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Education Box Title */
+.education-box h3 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Education Box Content */
+.education-box p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+/* Responsive Design for Education Section */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-box {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-box {
+        width: 90%;
+    }
+}
