@@ -45,6 +45,12 @@ body {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+
 .hire-me-btn {
     background-color: #f39c12;
     border: none;
@@ -53,6 +59,11 @@ body {
     font-weight: bold;
     border-radius: 5px;
 }
+.hire-me-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
 
 /* Main Section Styling */
 .main-section {
@@ -392,7 +403,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
-    width: calc(23.33% - 20px); /* Ensures 3 boxes in a row with gaps */
+    width: calc(23.33% - 20px); /* Default: 3 boxes in a row with gaps */
 }
 
 .certification-box img {
@@ -413,6 +424,29 @@ footer {
     color: #666;
     margin-bottom: 10px;
 }
+
+/* Responsive Styles */
+
+/* Tablets (768px and above) */
+@media (max-width: 1024px) {
+    .certification-box {
+        width: calc(31.33% - 20px); /* 2 boxes per row */
+    }
+}
+
+/* Large Smartphones (480px and above) */
+@media (max-width: 768px) {
+    .certification-box {
+        width: calc(48% - 20px); /* 2 boxes per row */
+    }
+}
+
+/* Small Smartphones (below 480px) */
+@media (max-width: 480px) {
+    .certification-box {
+        width: 100%; /* 1 box per row */
+    }
+}
 .videos-section {
     padding: 100px 100px;
     background-color: #f9f9f9;
@@ -432,7 +466,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
-    width: calc(35% - 20px); /* Ensures two video boxes in a row */
+    width: calc(35% - 20px); /* Default: 2 video boxes per row */
 }
 
 .video-box iframe {
@@ -451,6 +485,30 @@ footer {
     font-size: 1rem;
     color: #666;
 }
+
+/* Responsive Styles */
+
+/* Tablets (768px and above) */
+@media (max-width: 1024px) {
+    .video-box {
+        width: calc(48% - 20px); /* 2 video boxes per row */
+    }
+}
+
+/* Large Smartphones (480px and above) */
+@media (max-width: 768px) {
+    .video-box {
+        width: calc(100% - 20px); /* 1 video box per row */
+    }
+}
+
+/* Small Smartphones (below 480px) */
+@media (max-width: 480px) {
+    .video-box {
+        width: 100%; /* Full width for small screens */
+    }
+}
+
 .social-media-feed-section {
     padding: 50px 0;
     background-color: #f9f9f9;
