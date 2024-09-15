@@ -101,6 +101,7 @@ body {
     padding-left: 10px;
 }
 
+
 /* Profile Picture */
 .profile-picture {
     flex: 1;
@@ -109,7 +110,6 @@ body {
     align-items: center;
     padding: 1rem;
 }
-
 .circle {
     width: 400px;
     height: 400px;
@@ -117,6 +117,20 @@ body {
     border: 5px solid #18a074;
     object-fit: cover;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .circle {
+        max-width: 250px; /* Smaller size on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        max-width: 150px; /* Smaller size on small screens */
+    }
+}
+
 
 /* Footer */
 footer {
