@@ -4,6 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    --accent:#18a074;
+    overflow-x: hidden;
 }
 
 /* Navbar Styling */
@@ -11,8 +15,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #18a074;
-    padding: 1rem 2rem;
+    background-color: var(--accent);
+    padding: 20px 2rem;
+    border-radius: 0px 0px 10px 10px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -52,7 +57,7 @@ body {
 
 
 .hire-me-btn {
-    background-color: #f39c12;
+    background-color: #FFB400;
     border: none;
     padding: 0.5rem 1.5rem;
     color: white;
@@ -74,6 +79,7 @@ body {
     background-color: #f4f4f4;
     height: calc(100vh - 80px); /* Adjust to take full height minus navbar */
     flex-wrap: wrap;
+    
 }
 
 .intro-text {
@@ -97,7 +103,7 @@ body {
     font-size: 1.5rem;
     color: #333;
     font-style: italic;
-    border-left: 3px solid #18a074;
+    border-left: 3px solid var(--accent);
     padding-left: 10px;
 }
 
@@ -111,10 +117,10 @@ body {
     padding: 1rem;
 }
 .circle {
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
-    border: 5px solid #18a074;
+    border: 5px solid var(--accent);
     object-fit: cover;
 }
 
@@ -127,22 +133,26 @@ body {
 
 @media (max-width: 480px) {
     .circle {
-        max-width: 150px; /* Smaller size on small screens */
+        max-width: 180px; /* Smaller size on small screens */
+        max-height: 180px;
     }
 }
 
 
 /* Footer */
 footer {
-    background-color: #18a074;
-    color: white;
+    background-color: var(--accent);
+    color: #000;
     text-align: center;
-    padding: 1rem;
+    padding: 20px 0px 10px 0px;
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
 }
-
+#home{
+    display: flex;
+}
 /* Responsive Design */
 /* For Tablets */
 @media (max-width: 768px) {
@@ -151,6 +161,7 @@ footer {
         text-align: center;
         padding: 2rem;
     }
+
 
     .intro-text h1 {
         font-size: 3rem;
@@ -168,6 +179,17 @@ footer {
 
 /* For Mobile Devices */
 @media (max-width: 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main-section{
+        flex-direction: column;
+        height: auto;
+    }
+    #home{
+        flex-direction: column;
+    }
     .navbar {
         flex-direction: column;
         padding: 1rem;
@@ -199,6 +221,12 @@ footer {
         width: 200px;
         height: 200px;
     }
+    .footer p{
+color: #000;
+    }
+    .social-media-container{
+        flex-direction: column;
+    }
 }
 /* Education Section Styling */
 .education-section {
@@ -212,12 +240,33 @@ footer {
     margin-bottom: 3rem;
     color: #333;
 }
+.section-titleedu {
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: #333;
+}
+.section-titleskill{
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    color: #333;
+}
 
+
+#education{
+   
+    padding: 3rem;
+    align-content: center;
+    justify-content: center;
+}
 /* Education Container */
 .education-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    
+    gap: 30px;
+    
+    
+   
 }
 
 /* Education Box */
@@ -226,11 +275,11 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    width: 250px;
+    width:100%;
     margin-bottom: 2rem;
     position: relative;
     text-align: center;
-    border: 2px solid #18a074;
+    border: 2px solid var(--accent);
 }
 
 /* Logo Circle */
@@ -246,7 +295,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #18a074;
+    border: 2px solid var(--accent);
     overflow: hidden;
 }
 
@@ -254,6 +303,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     border-radius: 50%;
 }
 
@@ -292,7 +342,7 @@ footer {
 /* Portfolio Section Styling */
 .portfolio-section {
     background-color: #f9f9f9;
-    padding: 4rem 0;
+    
     text-align: center;
 }
 
@@ -302,17 +352,21 @@ footer {
     gap: 2rem;
     justify-items: center;
     margin: 0 auto;
-    max-width: 1200px;
+    
+}
+#portfolio{
+    padding: 3rem 4rem;
+    margin-bottom: 3rem;
 }
 
 /* Portfolio Box Styling */
 .portfolio-box {
-    background-color: white;
+    background-color: #f4f4f4;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    width: 250px;
-    height: 250px;
+    width: 90%;
+    
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -327,6 +381,8 @@ footer {
     border-radius: 10px;
     margin-bottom: 1rem;
     object-fit: cover;
+    object-position: center;
+    box-shadow: 0px 4px 8px rgba(128, 128, 128, 0.355);
 }
 
 .portfolio-box h3 {
@@ -350,12 +406,17 @@ footer {
 @media (max-width: 480px) {
     .portfolio-container {
         grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .portfolio-box{
+        width: 100%;
     }
 }
 /* Skills Section */
 .skills-section {
     padding: 50px;
-    background-color: #f4f4f9;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
@@ -369,7 +430,7 @@ footer {
 .skills-box {
     background-color: #fff;
     border-radius: 8px;
-    padding: 20px;
+    padding: 40px 20px 20px 20px;
     width: 200px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -399,15 +460,14 @@ footer {
 }
 
 .certifications-section {
-    padding: 100px 100px;
+    padding: 3rem;
     background-color: #f9f9f9;
 }
 
 .certifications-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
 }
 
 .certification-box {
@@ -417,12 +477,11 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
-    width: calc(23.33% - 20px); /* Default: 3 boxes in a row with gaps */
+    width: 100%;
 }
 
 .certification-box img {
     width: 100%;
-    height: 200px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -458,29 +517,35 @@ footer {
 /* Small Smartphones (below 480px) */
 @media (max-width: 480px) {
     .certification-box {
-        width: 100%; /* 1 box per row */
+        width: 90%; /* 1 box per row */
+    }
+    .certifications-section{
+        padding: 20px;
+    }
+
+    .certifications-container{
+        flex-direction: column;
     }
 }
 .videos-section {
-    padding: 100px 100px;
+    padding: 3rem;
     background-color: #f9f9f9;
 }
 
 .videos-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
 .video-box {
-    background-color: #fff;
+    background-color: #160404;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
-    width: calc(35% - 20px); /* Default: 2 video boxes per row */
+    width: 100%; /* Default: 2 video boxes per row */
 }
 
 .video-box iframe {
@@ -520,12 +585,23 @@ footer {
 @media (max-width: 480px) {
     .video-box {
         width: 100%; /* Full width for small screens */
+        padding: 5px;
+    }
+    .videos-container{
+        flex-direction: column;
+    }
+    .videos-section{
+        padding: 20px;
+        width: 88%;
+    }
+    .video-box h3, p{
+        color: gray;
     }
 }
 
 .social-media-feed-section {
-    padding: 50px 0;
-    background-color: #f9f9f9;
+    padding: 3rem;
+    background-color: #f4f4f4;
 }
 
 .section-title {
@@ -544,7 +620,7 @@ footer {
 
 .social-media-box {
     flex: 1;
-    max-width: 560px;
+    max-width: 360px;
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -561,7 +637,7 @@ footer {
 }
 
 .social-media-content {
-    padding: 15px;
+    padding: 20px;
 }
 
 .social-media-content h3 {
@@ -594,3 +670,4 @@ footer {
 .social-link img:hover {
     transform: scale(1.1);
 }
+
