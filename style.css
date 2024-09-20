@@ -23,24 +23,21 @@ body {
     z-index: 100;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 .navbar-brand {
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
 }
-
 .navbar-links {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-
 .navbar-links li {
     margin-left: 20px;
+    padding-top:10px;
 }
-
 .navbar-links a {
     color: white;
     text-decoration: none;
@@ -49,12 +46,10 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .navbar-links a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
 }
-
 
 .hire-me-btn {
     background-color: #FFB400;
@@ -70,6 +65,30 @@ body {
 }
 
 
+/* Theme Toggle Button */
+.theme-toggle-btn {
+    background-color: #007bff; /* Default button color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem; /* Same padding as "Hire Me" button */
+    font-weight: bold;
+
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Same border radius as "Hire Me" button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    height: 100%; /* Ensures it matches the height of other navbar buttons */
+    
+}
+
+.theme-toggle-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+
+
+
 /* Main Section Styling */
 .main-section {
     display: flex;
@@ -81,12 +100,10 @@ body {
     flex-wrap: wrap;
     
 }
-
 .intro-text {
     flex: 1;
     padding: 1rem;
 }
-
 .intro-text h1 {
     font-size: 4.2rem;
     margin-bottom: 0.5rem;
@@ -123,7 +140,6 @@ body {
     border: 5px solid var(--accent);
     object-fit: cover;
 }
-
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .circle {
@@ -161,8 +177,6 @@ footer {
         text-align: center;
         padding: 2rem;
     }
-
-
     .intro-text h1 {
         font-size: 3rem;
     }
@@ -251,7 +265,6 @@ color: #000;
     color: #333;
 }
 
-
 #education{
    
     padding: 3rem;
@@ -265,8 +278,6 @@ color: #000;
     
     gap: 30px;
     
-    
-   
 }
 
 /* Education Box */
@@ -539,7 +550,7 @@ color: #000;
 }
 
 .video-box {
-    background-color: #160404;
+    background-color: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -669,5 +680,188 @@ color: #000;
 
 .social-link img:hover {
     transform: scale(1.1);
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    padding: 20px;
+    background-color: #f4f4f4;
+
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.contact p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .contact h1 {
+        font-size: 2.2em;
+    }
+    .contact p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact h1 {
+        font-size: 2em;
+    }
+    .contact p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 15px;
+    }
+    .contact h1 {
+        font-size: 1.8em;
+    }
+    .contact p {
+        font-size: 0.9em;
+    }
+}
+
+
+
+
+
+
+
+/* Basic Styling for Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light theme background */
+    color: #333; /* Light theme text color */
+    width: 100%;
+    height: 100%;
+    --accent: #18a074; /* Accent color */
+    overflow-x: hidden;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212; /* Dark theme background */
+    color: white; /* Dark theme text color */
+}
+
+.navbar {
+    background-color: var(--accent); /* Navbar color remains same */
+    color: white; /* Navbar text color */
+}
+
+/* Adjust other elements for dark theme */
+body.dark-theme .navbar-links a {
+    color: white; /* Dark theme navbar links */
+}
+
+body.dark-theme .navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Keep hover effect */
+}
+
+body.dark-theme .hire-me-btn {
+    background-color: #FFB400; /* Keep same color */
+}
+
+body.dark-theme .hire-me-btn:hover {
+    background-color: #e67e22; /* Keep same color */
+}
+
+/* Main Section Styling */
+.main-section {
+    background-color: #f4f4f4; /* Light theme */
+}
+
+body.dark-theme .main-section {
+    background-color: #1e1e1e; /* Dark theme */
+}
+
+/* Update other sections similarly */
+.education-section,
+.portfolio-section,
+.skills-section,
+.certifications-section,
+.videos-section,
+.social-media-feed-section {
+    background-color: #f4f4f4; /* Light theme */
+}
+
+body.dark-theme .education-section,
+body.dark-theme .education-box,
+body.dark-theme .portfolio-section,
+body.dark-theme .portfolio-box,
+body.dark-theme .skills-section,
+body.dark-theme .skills-box,
+body.dark-theme .certifications-section,
+body.dark-theme .certification-box,
+body.dark-theme .videos-section,
+body.dark-theme .video-box,
+body.dark-theme .social-media-feed-section,
+body.dark-theme .social-media-feed-box,
+body.dark-theme .social-media-box,
+body.dark-theme .contact
+{
+    background-color: #1e1e1e; 
+    /* Dark theme */
+}
+
+/* Update text colors */
+body.dark-theme .intro-text h1,
+body.dark-theme .tagline,
+body.dark-theme .section-title,
+body.dark-theme .section-titleedu,
+body.dark-theme .education-box h3,
+body.dark-theme .education-box p,
+body.dark-theme .portfolio-box h3,
+body.dark-theme .skills-box h3,
+body.dark-theme .skills-box p,
+body.dark-theme .section-titleskill,
+body.dark-theme .certification-box h3,
+body.dark-theme .certification-box p,
+body.dark-theme .video-box h3,
+body.dark-theme .video-box p,
+body.dark-theme .social-media-content h3,
+body.dark-theme .social-media-content p,
+body.dark-theme .sher,
+body.dark-theme .intro-text,
+body.dark-theme .main-section,
+body.dark-theme .portfolio-container,
+body.dark-theme .contact h1,
+body.dark-theme .contact p 
+{
+    color: white; /* Dark theme text color */
+}
+
+/* Update footer */
+footer {
+    background-color: var(--accent); /* Keep footer color */
+    color: #000; /* Light theme text */
+}
+
+body.dark-theme footer {
+    color: #e0e0e0; /* Dark theme footer text */
 }
 
