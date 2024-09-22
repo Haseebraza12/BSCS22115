@@ -1,0 +1,107 @@
+{
+    "education": [
+      {
+        "title": "Matriculation",
+        "institution": "Garrison Academy for Boys",
+        "marks": "1083 / 1100",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5sHBBCHxRQjLeLxdjZ5OswTdxLAnlTG-Qzw&s"
+      },
+      {
+        "title": "Pre-Engineering",
+        "institution": "Punjab Group of Colleges",
+        "marks": "1032 / 1100",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqWqB_HTW5-XYOfXvfOjVZIiKqZRsDtNq6HKdr3T5JoCC6Le0LUHiEv7nH74KgkgZGZlA&usqp=CAU"
+      },
+      {
+        "title": "Computer Science",
+        "institution": "Information Technology University",
+        "marks": "Currently Enrolled",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3sRrFojshezBgMDITZpT7dJ2vGp7mTTu1Cg&s"
+      }
+    ],
+    "portfolio": [
+      {
+        "title": "Attendance System",
+        "description": "I have done this using python PYQT6 library",
+        "image": "Images/WhatsApp Image 2024-08-07 at 14.45.16_bf95c779.jpg"
+      },
+      {
+        "title": "Negotiation Model",
+        "description": "This a model which negotiate like a human on business's ideas",
+        "image": "Images/image (2).png"
+      },
+      {
+        "title": "Comparison of ANN & RNN",
+        "description": "This is a research-based project to check the accuracy of ANN VS RNN models",
+        "image": "Images/WhatsApp Image 2024-03-19 at 20.48.48_99ec768c.jpg"
+      },
+      {
+        "title": "Blood Management System",
+        "description": "This is a database project and I have done successfully with my team members",
+        "image": "Images/BMS.jpg"
+
+      },
+      
+        {
+            "title": "Vehicle Detection",
+            "description": "I have done this using openCV and YOLO v5",
+            "image": "Images/YOLO v5.jpg"
+        },
+        {
+            "title": "Alpha GPT",
+            "description": "I have cloned 'CHATGPT' using its API",
+            "image": "Images/Alpha Gpt pic.png"
+        }
+    
+    
+    ],
+    "skills": [
+        
+            {
+              "title": "Python",
+              "description": "Expertise in Python for AI, ML, and automation projects.",
+              "image": "Logos/python.png"
+            },
+            
+            {
+              "title": "HTML/CSS",
+              "description": "Proficient in building responsive and aesthetic web pages.",
+              "image": "Logos/html.png"
+            },
+            {
+              "title": "OpenCV",
+              "description": "Skilled in using OpenCV for image processing and vision systems.",
+              "image": "Logos/Opencv.jpeg"
+            },
+            {
+              "title": "Django",
+              "description": "Experience in Django for full-stack web development.",
+              "image": "Logos/django.png"
+            },
+            {
+              "title": "Chatbot Development",
+              "description": "Proficient in AI chatbot development using various platforms.",
+              "image": "Logos/chatbot.jpeg"
+            }
+          
+          
+    ],
+    "certifications": [
+        {
+            "title": "Certification Of AI Course",
+            "description": "I have successfully done my AI course from corvit system Lahore",
+            "image": "Images/certificate_Corvit.jpg"
+          },
+          {
+            "title": "Certification Of Leadership Program",
+            "description": "I have successfully completed 'Aspire' Leadership Program",
+            "image": "Images/haseeb_ur_rehman_alp_2024_certificate_of_completion_page-0001.jpg"
+          },
+          {
+            "title": "Certification Of Robotics",
+            "description": "I have done the basic certification of robotics",
+            "image": "Images/Robotics.jpg"
+          }
+    ]
+  }
+  
