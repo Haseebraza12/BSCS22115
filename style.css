@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: var(--accent);
-    padding: 20px 2rem;
+    padding: 3vh 2rem;
     border-radius: 0px 0px 10px 10px;
     position: sticky;
     top: 0;
@@ -95,31 +95,43 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
+    padding: 0px 2rem;
+    gap: 0;
     background-color: #f4f4f4;
-    height: calc(100vh - 80px); /* Adjust to take full height minus navbar */
+    height: 97vh; /* Adjust to take full height minus navbar */
     flex-wrap: wrap;
     
 }
 .intro-text {
     flex: 1;
+    gap: 0px;
     padding: 1rem;
+    line-height: 60px;
 }
 .intro-text h1 {
-    font-size: 4.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 3.5rem;
+    margin:0;
+    margin-top: -8px;
     color: #333;
 }
-
+#small{
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+}
 .tagline {
     font-size: 1.2rem;
+    margin-top: 5px;
+    line-height: 25px;
     color: #555;
-    margin-bottom: 1.5rem;
+    
 }
 
 .sher {
-    font-size: 1.5rem;
+    font-size: 1 rem;
     color: #333;
+    line-height: 25px;
     font-style: italic;
     border-left: 3px solid var(--accent);
     padding-left: 10px;
@@ -135,8 +147,8 @@ body {
     padding: 1rem;
 }
 .circle {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     border: 5px solid var(--accent);
     object-fit: cover;
@@ -144,7 +156,7 @@ body {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .circle {
-        max-width: 250px; /* Smaller size on medium screens */
+        max-width: 200px; /* Smaller size on medium screens */
     }
 }
 
@@ -385,6 +397,7 @@ color: #000;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #18a0757d;
 }
 
 .portfolio-box img {
@@ -406,6 +419,8 @@ color: #000;
 .portfolio-box:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--accent);
+
 }
 
 /* Responsive Design for Portfolio */
@@ -447,10 +462,13 @@ color: #000;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    border: 2px solid #18a0757d;
+
 }
 
 .skills-box:hover {
     transform: translateY(-10px);
+    border: 2px solid var(--accent);
 }
 
 .skills-box img {
@@ -464,11 +482,13 @@ color: #000;
     margin: 10px 0;
     font-size: 1.2em;
     font-weight: bold;
+    
 }
 
 .skills-box p {
     font-size: 0.9em;
     color: #666;
+    
 }
 
 .certifications-section {
@@ -484,12 +504,18 @@ color: #000;
 
 .certification-box {
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 2px solid #18a0757d;
+    transition: transform 0.3s ease-in-out;
+
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
     width: 100%;
+}
+.certification-box:hover {
+    transform: translateY(-10px);
+    border: 2px solid var(--accent);
 }
 /*.certifications-container {
     display: flex;
@@ -574,6 +600,7 @@ color: #000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 20px;
+    border: 2px solid #18a074;
     width: 100%; /* Default: 2 video boxes per row */
 }
 
@@ -656,6 +683,7 @@ color: #000;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: 2px solid #18a074;
 }
 
 .social-media-link {
